@@ -82,7 +82,8 @@ a{
 }
 
 #name{
-    font-size: 4vw;
+    font-size: 1vh;
+    font-weight: bold;
 }
 
 main{
