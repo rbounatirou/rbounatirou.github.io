@@ -1,13 +1,14 @@
 body{
     background: linear-gradient(rgba(69,177,201,0.6), white);
-
     display: flex;
     flex-direction: column;
-    font-size: 1.5vh;
+    justify-content: space-between;
+    font-size: 1em;
 }
 
 @font-face {
     font-family: asl;
+
     src: url("src/font/asl.ttf");
 }
 
@@ -146,6 +147,7 @@ footer{
     }
 
     body{
+        font-size: 1.2em;
         background: linear-gradient(to right, rgba(64,177,201,0.6), white);  
     }
 
@@ -185,7 +187,7 @@ footer{
     }
 
     body{
-        font-size: 1.2vw;
+        font-size: 1.2em;
     }
 
     #mainpart{
