@@ -8,7 +8,7 @@ body{
 
 @font-face {
     font-family: asl;
-    src: url("asl.ttf");
+    src: url("src/font/asl.ttf");
 }
 
 #photoprofil{
@@ -18,7 +18,7 @@ body{
 }
 
 header{
-    background-image: url("wave.png");
+    background-image: url("src/images/wave.png");
     background-size: contain;
     background-position: left top;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ main ul li{
     text-decoration: none;
     padding-left:2.5vh;
     margin-bottom: 2.2vh;
-    background-image: url("photoicon.png");
+    background-image: url("src/images/photoicon.png");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 2vh;
@@ -228,6 +228,10 @@ footer{
         margin-bottom: 20px;
     }
 
+    .nonprintable{
+        display: none;
+    }
+
     #name{
         font-size: 2.5vw;
     }
@@ -242,5 +246,9 @@ footer{
     footer{
         padding:0px;
         display: none;
+    }
+
+    a{
+        color: rgb(0,0,0);
     }
 }
