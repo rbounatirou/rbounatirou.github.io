@@ -121,7 +121,7 @@ footer{
     justify-content: space-around;
 }
 
-#titreprincipal
+main h1
 {
     font-weight: bold;
     font-family: asl;
@@ -130,8 +130,10 @@ footer{
     margin-bottom: 20px;
 }
 
-.categorie
+main h2
 {
+    font-size: 1.2em;
+    font-weight: normal;
     text-decoration: underline;
 }
 
@@ -222,7 +224,7 @@ footer{
         flex-direction: column-reverse; 
     }
 
-    #titreprincipal
+    main h1
     {
         font-weight: bold;
         font-family: asl;
