@@ -18,6 +18,9 @@ body{
     margin-right: 25px;
 }
 
+#header-link{
+    font-size:0.8em;
+}
 header{
     background-image: url("src/images/wave.png");
     background-size: contain;
@@ -220,6 +223,11 @@ main h2
 }
 
 @media print{
+
+    #header-link{
+        font-size: 1em;
+    }
+    
     header{
         flex-wrap: nowrap;
     }
