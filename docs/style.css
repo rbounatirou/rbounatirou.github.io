@@ -60,12 +60,12 @@ a{
 
 
 
-.icon{
+footer .icon{
     max-width:2em;
 }
 
 header .icon{
-    max-width: 0.7em;
+    max-width: 0.5em;
 }
 
 #accroche{
