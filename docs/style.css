@@ -58,11 +58,15 @@ a{
     font-weight: bold;
 }
 
+
+
 .icon{
     max-width:2em;
 }
 
-
+header .icon{
+    max-width: 0.7em;
+}
 
 #accroche{
     padding: 5px;
