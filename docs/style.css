@@ -187,6 +187,10 @@ main h2
     }
 }
 
+#header-link img{
+    margin-right: 0.5em;
+}
+
 @media (min-width: 1024px){
 
     #name{
@@ -227,7 +231,7 @@ main h2
     #header-link{
         font-size: 1em;
     }
-    
+
     header{
         flex-wrap: nowrap;
     }
