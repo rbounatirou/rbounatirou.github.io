@@ -84,6 +84,11 @@ header .icon{
     max-width: 2vh;
 }
 
+
+.bloc{
+    word-wrap: break-word;
+}
+
 #accrochebody{
     align-items:flex-start;
 }
@@ -105,7 +110,7 @@ main ul{
     list-style-type: none;
 }
 
-main ul li{
+main ul li{ 
     text-decoration: none;
     padding-left:2.5vh;
     margin-bottom: 2.2vh;
