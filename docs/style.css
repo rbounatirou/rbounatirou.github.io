@@ -130,9 +130,12 @@ footer{
     border-radius: 1.5vh;
     font-size: 2vw;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
+footer .icon{
+    margin-right: 1.5em;
+}
 main h1
 {
     font-weight: bold;
