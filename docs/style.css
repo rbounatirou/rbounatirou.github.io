@@ -131,11 +131,9 @@ footer{
     font-size: 2vw;
     flex-wrap: wrap;
     justify-content: center;
+    gap:1.5em;
 }
 
-footer .icon{
-    margin-right: 1.5em;
-}
 main h1
 {
     font-weight: bold;
