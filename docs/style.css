@@ -1,8 +1,8 @@
 body{
+    min-height: 100vh;    
     background: linear-gradient(rgba(69,177,201,0.6), white);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-size: 0.8em;
 }
 
@@ -37,10 +37,20 @@ header{
     flex-wrap: wrap;
 }
 
+header p{
+    margin:0px;
+}
+
+
+
 header h1{
     text-decoration: underline wavy rgba(255,255,255,0.4);
     font-size: 1vh;
     margin-bottom: 20px;
+}
+
+#header-link img{
+    margin-right: 0.5em;
 }
 
 
@@ -73,7 +83,8 @@ header .icon{
 
 #accroche{
     padding: 5px;
-    background: linear-gradient(to right, rgba(128,128,128,0.5), rgba(128,128,128,0));    margin-left: auto;
+    background: linear-gradient(to right, rgba(128,128,128,0.5), rgba(128,128,128,0));    
+    margin-left: auto;
     margin-right: auto;
     margin-bottom: 1.5em;
     display: flex;
@@ -104,20 +115,67 @@ main{
     flex-direction: column;
 }
 
-main ul{
+article ul{
     border-left: 0.5em solid rgb(0,0,255);
-    margin-left:0.5em;
+    margin-left:0em;
     list-style-type: none;
+
+    
 }
 
-main ul li{ 
+article ul li{
     text-decoration: none;
-    padding-left:2.5vh;
-    margin-bottom: 2.2vh;
     background-image: url("src/images/photoicon.png");
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 2vh;
+    background-size: 1em;
+    padding-left: 1.2em;
+}
+
+nav{
+    margin-right: 1.5em;
+}
+
+nav ul{
+    padding-left: 0px;
+    list-style: none;
+    background-image: none;
+    text-align: center;    
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+#mainpart{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav ul li{
+    
+    min-width: 20%;
+    background-color: rgba(0,0,255,0.4);
+    border-radius: 0em 0em 0.3em 0.3em;
+    border: 0.15em solid rgb(0,0,0);
+    display: flex;
+    padding-left: 0.5em;
+    
+
+}
+
+nav a{
+    font-weight: normal;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+
+
+#mainpart article:not(.activeart){
+    display: none;
 }
 
 footer{
@@ -150,6 +208,11 @@ main h2
     text-decoration: underline;
 }
 
+nav ul li:hover{
+    border-top: 0.5em solid rgb(0,0,255);
+   
+}
+
 
 
 
@@ -177,28 +240,54 @@ main h2
 
     #mainpart{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: row;        
+    }
+    article{
+        flex-grow: 1;
+        align-items: center;
+    }
+    nav{
+        width:30%;
+        max-width:30%;
+        margin-right: 1.5em;
+        
+    }
+    nav ul{
+        padding-left: 0px;
+        list-style: none;
+        background-image: none;
+        text-align: center;    
+        display: flex;
+        flex-direction: column;
     }
     
-    #left-part{        
-        justify-content: center;
-        padding-right: 1em;
+    nav ul li{
+        min-height:2em;
+        max-height:2em;
+        min-width: auto;
+        background-color: rgba(0,0,255,0.4);
+        border-radius: 0em 0.3em 0.3em 0em;
+        border: 0.15em solid rgb(0,0,0);
+        display: flex;
+        align-items: center;
+        overflow: wrap;
+    
     }
 
-    #right-part{
-        border-left: 0.3em solid rgb(0,162,232);
-        padding-left: 1em;
-        justify-content: center;
+    nav ul li:hover{
+        border-left: 0.5em solid rgb(0,0,255);
+        border-top: 0.15em solid rgb(0,0,0);      
     }
+    
 }
 
-#header-link img{
-    margin-right: 0.5em;
-}
+
 
 @media (min-width: 1024px){
 
+    body{
+        min-height:auto;
+    }
     #name{
         font-size: 2.2vw;
     }
@@ -210,22 +299,7 @@ main h2
         font-size: 1.2em;
     }
 
-    #mainpart{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
     
-    #left-part{        
-        justify-content: center;
-        padding-right: 1em;
-    }
-
-    #right-part{
-        border-left: 0.3em solid rgb(0,162,232);
-        padding-left: 1em;
-        justify-content: center;
-    }
     
     #accroche{
         min-width: 80%;
@@ -239,11 +313,24 @@ main h2
     }
 
     header{
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        padding: 0.5em;
     }
+
+    body{
+        min-height: auto;
+    }
+
     #presentation{
         display: flex;
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
+
+    }
+
+    article ul{
+        
+        list-style-type: disc;
     }
 
     main h1
@@ -252,7 +339,11 @@ main h2
         font-family: asl;
         text-align: center;
         font-size: 2em;
-        margin-bottom: 20px;
+    }
+
+    #mainpart article:not(.activeart){
+        display: flex;
+        flex-direction: column;
     }
 
     .nonprintable{
@@ -264,12 +355,14 @@ main h2
     }
 
     header h1{
-        font-size: 2.2vw;
+        font-size: 2.7vw;
         text-decoration: underline solid rgb(0,0,0);
     }
+
     body{
-        background-image: none;
+        background: none;
     }
+    
     footer{
         padding:0px;
         display: none;
@@ -278,4 +371,8 @@ main h2
     a{
         color: rgb(0,0,0);
     }
+    #accroche{
+        margin:0px;
+    }
+    
 }

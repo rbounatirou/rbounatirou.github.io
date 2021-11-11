@@ -3,39 +3,46 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <noscript>
+			<meta http-equiv="Refresh" content="0 URL=erreur.php" />
+		</noscript>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="src/js/manager.js"></script>
         <link rel="stylesheet" href="style.css" />
+        
         <title>CV rodolphe BOUNATIROU</title>
+        
     </head>
     <body>
         <header>
             <img src="src/images/photo.jpg" id="photoprofil" alt="photo de profil" />
-            <div id="presentation">
-                <div id="top-part"><h1>Recherche poste de développeur d'applications</h1></div>
+            <article id="presentation">
+                <p id="top-part"><h1>Recherche poste de développeur d'applications</h1></p>
                 <div id="bot-part">
-                    <div id="name">BOUNATIROU Rodolphe</div>
-                    <div>28 ans</div>
-                    <div>Mobilité nationale</div>
-                    <div>58 bd du Val de Chézine</div>
-                    <div>44800 St-Herblain</div>
+                    <p id="name">BOUNATIROU Rodolphe</p>
+                    <p>28 ans</p>
+                    <p>Mobilité nationale</p>
+                    <p>58 bd du Val de Chézine</p>
+                    <p>44800 St-Herblain</p>
                     <div id="header-link" class="bloc">
-                        <div>
+                        <p>
                             <img src="src/images/tel.png" alt="tel:" class="icon" /><a href="tel:0658026794">0658026794</a>
-                        </div>
-                        <div>
+                        </p>
+                        <p>
                             <img src="src/images/mail.png" alt="mail:" class="icon" /><a href="mailto:rodolphe.bounatirou@gmail.com">rodolphe.bounatirou@gmail.com</a>
-                        </div>
+                        </p>
                         <div class="nonprintable">
-                            <div>
+                            <p>
                                 <img src="src/images/linkedin.png" alt="likedin:" class="icon" /><a href="https://www.linkedin.com/in/rodolphe-bounatirou-602b22223">profil Linkedin</a>
-                            </div>
-                            <div>
+                            </p>
+                            <p>
                                 <img src="src/images/pdf.png" class="icon" alt="pdf:" /><a href="src/CV.pdf" download>Telecharger au format pdf</a>
-                            </div>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </article>
+        </header>        
         <main>
             <div id="accroche" class="bloc">
                 <img src="src/images/guillemets.png" id="citation" alt="citation" />
@@ -45,8 +52,16 @@
                 </div>
             </div>
             <h1>Curriculum Vitaë</h1>
-            <div id="mainpart">
-                <div id="left-part">
+            <section id="mainpart">
+                <nav class="nonprintable">
+                    <ul>
+                        <li onclick="showFormation()">Diplômes et formations</li>
+                        <li onclick="showCompetences()">Compétences professionnelles</li>
+                        <li onclick="showInterest()">Centres d'intérêts</li>
+                        <li onclick="showOther()">informations diverses</li>
+                    </ul>
+                </nav>
+                <article id="diplomes-formation" class="activeart">
                     <h2>Diplômes</h2>            
                     <ul>
                     <li>Bac pro SEN option EIE </li>
@@ -68,25 +83,30 @@
                             <div>(<label class="underline">Université de sciences</label>,<label class="italic">Nantes</label>[2016,2017])</div>
                         </li>
                     </ul>
-                </div>
-                <div id="right-part">
+                </article>
+                <article id="competences-pro">
                     <h2>Compétences professionnelles</h2> 
                     <ul>
                         <li>Travail en autonomie</li>
                         <li>Connaissance de plusieurs langages de programmation</li>
                     </ul>
+                </article>
+                
+                <article id="centre-interet">
+                    <h2>Centres d'intérêts</h2>
+                    <ul>
+                        <li>Jeux vidéo</li>
+                        <li>Sports</li>
+                    </ul>
+                </article> 
+                <article id="info-diverses">
                     <h2>Informations diverses</h2>
                     <ul>
                         <li>Parle et comprends l'anglais (A2)</li>
                                       
                     </ul>
-                    <h2>Centres d'intérêts</h2>
-                    <ul>
-                        <li>Jeux vidéo</li>
-                        <li>Sports</li>
-                    </ul>       
-                </div>
-            </div>
+                </article>     
+            </section>
         </main>
         <footer>
             <a href="mailto:rodolphe.bounatirou@gmail.com"><img src="src/images/mail.png" class="icon" alt="icone de mail"/></a>
