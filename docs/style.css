@@ -341,9 +341,15 @@ nav ul li:hover{
         font-size: 2em;
     }
 
-    #mainpart article:not(.activeart){
+    
+
+    #mainpart{
         display: flex;
         flex-direction: column;
+    }
+
+    #mainpart article:not(.activeart){
+        display: block;
     }
 
     .nonprintable{
