@@ -79,7 +79,13 @@ footer .icon{
 
 header .icon{
     max-width: 0.5em;
+	max-height: 0.5em;
 }
+
+.onlyprintable{
+	display:none;
+}
+
 
 #accroche{
     padding: 5px;
@@ -134,7 +140,9 @@ article ul li{
 
 nav{
     margin-right: 1.5em;
+
 }
+
 
 nav ul{
     padding-left: 0px;
@@ -143,7 +151,12 @@ nav ul{
     text-align: center;    
     display: flex;
     flex-direction: row;
-    
+	
+}
+
+nav ul li{
+	overflow:hidden;
+	text-overflow:ellipsis;
 }
 
 #mainpart{
@@ -266,6 +279,9 @@ nav ul li:hover{
         text-align: center;    
         display: flex;
         flex-direction: column;
+		overflow:hidden;
+	overflow-wrap: break-word;
+	text-overflow:ellipsis;
     }
     
     nav ul li{
@@ -314,7 +330,8 @@ nav ul li:hover{
 }
 
 @media print{
-
+	
+	
     #header-link{
         font-size: 1em;
     }
@@ -327,6 +344,7 @@ nav ul li:hover{
 
     body{
         min-height: auto;
+		background-color: rgba(64,177,201,0.6);
     }
 
     #presentation{
@@ -334,6 +352,12 @@ nav ul li:hover{
         flex-direction: column-reverse;
 
     }
+	
+	header .icon{
+		max-width: 0.8em;
+		max-height: 0.8em;
+	}
+	
 
     article ul{
         
@@ -364,6 +388,12 @@ nav ul li:hover{
     .nonprintable{
         display: none;
     }
+	
+	.onlyprintable{
+		display:flex;
+		flex-direction:row;
+	}
+
 
     #name{
         font-size: 2.5vw;
