@@ -343,8 +343,8 @@ nav ul li:hover{
     }
 
     body{
-        min-height: auto;
-		background-color: rgba(64,177,201,0.6);
+        background: linear-gradient(to right, rgb(64,177,201), white);  
+        min-height: auto;        
     }
 
     #presentation{
@@ -360,8 +360,8 @@ nav ul li:hover{
 	
 
     article ul{
-        
-        list-style-type: disc;
+        padding-left: 1em;
+        list-style-type: none;
     }
 
     main h1
@@ -402,10 +402,6 @@ nav ul li:hover{
     header h1{
         font-size: 2.7vw;
         text-decoration: underline solid rgb(0,0,0);
-    }
-
-    body{
-        background: none;
     }
     
     footer{
