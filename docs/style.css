@@ -320,7 +320,6 @@ nav ul li:hover{
     body{
         font-size: 1.2em;
     }
-
     
     
     #accroche{
@@ -333,6 +332,10 @@ nav ul li:hover{
 	
     #header-link{
         font-size: 1em;
+    }
+
+    #photoprofil{
+        width: 12vh;
     }
 
     header{
