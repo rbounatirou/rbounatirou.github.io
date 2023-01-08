@@ -342,10 +342,12 @@ nav ul li:hover{
         flex-wrap: wrap;
         border: 2px solid black;
         padding: 0.5em;
+        background-image: none;
+        background-color: transparent;
     }
 
     body{
-        background: linear-gradient(to right, rgb(64,177,201), white);  
+        background: none;  
         min-height: auto;        
     }
 
@@ -396,7 +398,9 @@ nav ul li:hover{
 		flex-direction:row;
 	}
 
-
+    #accroche{
+        display: none;
+    }
     #name{
         font-size: 2.5vw;
     }
