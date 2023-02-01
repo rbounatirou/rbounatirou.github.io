@@ -40,7 +40,7 @@ function showInterest(){
     el.className = "activeart";
 }
 
-function showOther(){
+/*function showOther(){
     let el = document.getElementById("info-diverses");
     
     
@@ -50,4 +50,4 @@ function showOther(){
         els[i].className="";
     }
     el.className = "activeart";
-}
+}*/
