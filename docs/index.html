@@ -1,127 +1,299 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="src/js/manager.js"></script>
-    <link rel="stylesheet" href="style.css" />
-
-    <title>CV rodolphe BOUNATIROU</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" type="module"></script>
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-        <img src="src/images/photo.jpg" id="photoprofil" alt="photo de profil" />
-        <article id="presentation">
-            <h1 id="top-part">Recherche poste de développeur d'applications</h1>
-            <div id="bot-part">
-                <p id="name">BOUNATIROU Rodolphe</p>
-                <p>29 ans</p>
-                <p>Mobilité nationale</p>
-                <p>58 bd du Val de Chézine</p>
-                <p>44800 St-Herblain</p>
-                <div id="header-link" class="bloc">
-					<p class="onlyprintable">
-						<img src="src/images/globe.png" class="icon">
-						<a href="http://rbounatirou.github.io">https://rbounatirou.github.io/</a>
-                    </p>
-                    <div class="nonprintable">
-                        <p>
-                            <img src="src/images/linkedin.png" alt="likedin:" class="icon" /><a
-                                href="https://www.linkedin.com/in/rbounatirou">profil Linkedin</a>
-                        </p>
-                        <p>
-                            <img src="src/images/pdf.png" class="icon" alt="pdf:" /><a href="src/CV_Rodolphe_Bounatirou.pdf"
-                                download>Telecharger au format pdf</a>
-                        </p>
-                    </div>
+        <figure id="photo"></figure>
+        <div id="headergrid">
+            <h1>Rodolphe BOUNATIROU</h1><p id="age">29 ans</p>
+            <h2>À la recherche d'un stage en tant que concepteur développeur d'applications</h2>
+            <section class="liens nonprintable" id="blocliens">                
+                <a href="mailto:rodolphe.bounatirou@gmail.com">
+                </a>
+                <a href="tel:0774421103">
+                </a>
+                <a href="https://www.linkedin.com/in/rbounatirou">
+                <div class="lien">                    
+                    <figure class="icon linkedin">    
+                    </figure>                
+                    <p>Profil linkedin</p>
                 </div>
-            </div>
-        </article>
+                </a>
+                <a href="/src/CV.pdf">
+                    <div class="lien">                    
+                        <figure class="icon pdf">    
+                        </figure>                
+                        <p>CV en pdf</p>
+                    </div>
+                    </a>
+            </section>
+        </div>        
     </header>
+   
     <main>
-        <div id="accroche" class="bloc">
-            <img src="src/images/guillemets.png" id="citation" alt="citation" />
-            <div id="accrochebody" >
-                Depuis que je suis rentré dans le domaine de la programmation,
-                je n'ai jamais arrêté de me former
-            </div>
-        </div>
-        <h1>Curriculum Vitaë</h1>
-        <section id="mainpart">
-            <nav class="nonprintable">
+        <section id="parcourspresentation">
+            <h1>Profil</h1>
+            <p>
+                Autodidacte depuis mes 13 ans, j'ai commencé à me former au HTML pour créer des blogs.
+                À partir de mon baccalauréat je me suis dirigé vers les langages de programmation d'applications,
+                puis vers le C++ pour créer des petits jeux.
+                Depuis j'ai continué à m'autoformer sur de nouvelles technologies et à réaliser quelques projets personnels
+                comme des sites web et une application sous Android. Plutôt orienté vers une logique scientifique, j'aime travailler de façon structurée.
+                <br>
+                <span>Aujourd'hui je suis en formation pour valider un diplôme, gage de reconnaissance de mes compétences, et apprendre les bonnes pratiques.</span>
+            </p>
+        </section>    
+        <article id="articleprincipal">
+            <nav id="navigation" class="nonprintable">
                 <ul>
-                    <li onclick="showCompetences()">Compétences professionnelles</li>
-                    <li onclick="showFormation()">Diplômes et formations</li>                    
-                    <li onclick="showInterest()">Centres d'intérêt</li>
+                    <li class="navbt" value="competencesgrid">Compétences</li>
+                    <li class="navbt" value="formations">Formation</li>
+                    <li class="navbt" value="stages">Stages</li>
+                    <li class="navbt" value="exempleprojets">Projets professionnels</li>
+                    <li class="navbt" value="centresinteret">Centres d'intérêt</li>                    
                 </ul>
             </nav>
-            <article id="competences-pro" class="activeart">
-                <h2>Compétences professionnelles</h2>
-                <ul>
-                    <li>Travail en autonomie</li>
-                    <li>Connaissance de plusieurs langages de programmation</li>
-                </ul>
-            </article>
-            <article id="diplomes-formation">
-                <h2>Diplômes</h2>
-                <ul>
-                    <li>Bac pro SEN option EIE </li>
-                </ul>
-                <h2>Formations</h2>
-                <ul>
-                    <li>
-                        <div>Concepteur developpeur d'applications(en cours)</div>
-                        <div>(<label class="underline">Centre de Réadaptation de Mulhouse</label>
-                        16 mois)</div>
-                    </li>
-                    <li>
-						<div>ABC Développement</div>
-						<div>(<label class="underline">Centre de Réadaptation de Mulhouse</label>
-						6 mois)</div>
-					</li>
-                    <li>
-                        <div>Mise à niveau scientifique(REUSCIT)</div>
-                        <div>(<label class="underline">Université de sciences</label>,<label
-                                class="italic">Nantes</label> 1 an)</div>
-                    </li>
-                    <li>
-                        <div>BTS Service Informatique aux Organisations,</div>
-                        <div>option SLAM (Solutions logicielles et Application Métier)</div>
-                        <div>(<label class="underline">Lycée Carcouët</label>, <label class="italic">Nantes</label> 2
-                            ans)</div>
-                    </li>
-                    <li>
-                        <div>Baccalauréat professionnel Systèmes Électroniques Numériques</div>
-                        <div>option Électronique Industrielle Embarquée</div>
-                        <div>(<label class="underline">Lycée Jean Monnet</label>, <label class="italic"> Les
-                                herbiers</label> 3 ans)</div>
-                    </li>
-                </ul>
-            </article>
-            
-
-            <article id="centre-interet">
-                <h2>Centres d'intérêts</h2>
-                <ul>
-                    <li>Jeux vidéo</li>
-                    <li>Sports</li>
-					<li>Nutrition</li>
-					<li>Mathématiques</li>
-                </ul>
-            </article>
-        </section>
+            <div id="infos">
+                <section id="competencesgrid">
+                    <h1>Compétences</h1>
+                    <section id="competenceslangages">                        
+                        <h1>Langages</h1>                    
+                        <ul>
+                            <li>C++, C#, C</li>
+                            <li>Java, Python</li>
+                            <li>SQL, NoSQL</li>
+                            <li>PHP, HTML, CSS, Javascript</li>
+                        </ul>                        
+                    </section>
+                    <section id="competencesmethodes">
+                        <h1>Méthodes & outils</h1>
+                        <ul>
+                            <li>Notation UML</li>
+                            <li>Méthode Merise</li>
+                            <li>GIT</li>
+                            <li>Figma (IHM)</li>
+                            <li>Tests unitaires</li>
+                        </ul>
+                    </section>
+                    <section id="competencesframework">
+                        <h1>Frameworks & bibliothèques</h1>
+                        <ul>
+                            <li>React</li>
+                            <li>.NET</li>
+                            <li>SFML2</li>
+                            <li>JavaFX</li>
+                        </ul>
+                    </section>
+                </section>
+                <section id="formations">
+                    <h1>
+                        Formations
+                    </h1>
+                    <table class="datetable">
+                        <tbody>
+                            <tr>
+                                <td>2022-<span class="formatlower">mars</span> 2024<br>
+                                    <span class="formatlower">2021-2022</span></td>
+                                <td><span class="formathigher">Concepteur développeur d'applications</span> - <span class="formatlower">niv 6</span>
+                                    <br><i>Préqualification en développement informatique</i> - <span class="formatlower">5 mois</span>
+                                    <br>Centre de réadaptation de Mulhouse - 68
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2016-2017</td>
+                                <td>
+                                    <span class="formathigher">Mise à niveau scientifique</span>
+                                    <br>Nantes Université - 44              
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2014-2016</td>
+                                <td>
+                                    <span class="formathigher">BTS Services Informatiques aux Organisations</span>
+                                    <br>Option Solutions Logicielles et Applications Métier<br>
+                                    <i>Algorithmie, programmation, bases systèmes & réseaux</i><br>
+                                    Lycée Carcouët - 44
+                                </td>                            
+                            </tr>
+                            <tr>
+                                <td>2014</td>
+                                <td><span class="formathigher">Baccalauréat professionnel Systèmes Électroniques Numériques</span><br>
+                                Option Electronique Industrielle Embaquée<br>
+                                Lycée Jean Monnet - 85</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </section>
+                <section id="stages">
+                    <h1>
+                        Stages professionnels
+                    </h1>
+                    <table class="datetable">
+                        <tbody>
+                            <tr>
+                                <td>2014
+                                    <br><span class="formatlower">2 mois</span>
+                                    <br><span class="formatlower">La Roche/Yon</span>                                    
+                                <td><span class="formathigher">Développeur d'applications</span>
+                                    <br><span class="formathigher">Bimedia</span> - Solutions connectées de pilotage des ventes
+                                    <br>Conception d'une interface graphique pour la gestion d'une alarme (Plateforme Arduino, langage C et AutoIT)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2013
+                                    <br><span class="formatlower">2 mois</span>
+                                    <br><span class="formatlower">Les Landes-Genusson</span>
+                                </td>
+                                <td>
+                                    <span class="formathigher">Technicien SAV électrotechnique</span>
+                                    <br><span class="formathigher">SCS Sentinel</span> - Motorisation de portails
+                                    <br>Dépannage de portiers vidéos
+                                    <br><i>Rédaction de fiches d'intervention</i>              
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2012
+                                    <br><span class="formatlower">1 mois 1/2</span>
+                                    <br><span class="formatlower">Les Herbiers</span>
+                                </td>
+                                <td>
+                                    <span class="formathigher">Technicien informatique</span>
+                                    <span class="formathigher">Hyper U</span> - Atelier SAV
+                                    Installation de systèmes d'exploitation
+                                    <br>Réinitialisation de PC
+                                    <br>Dépannage matériel et logiciel
+                                </td>
+                                                            
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="exempleprojets">
+                    <h1>
+                        Exemples de projets personnels
+                    </h1>
+                    <p>
+                        Dans mon parcours d'autodidacte je me suis formé par de petits projets que j'ai pu réaliser.
+                        Voici une liste de quelques uns d'entre eux :
+                        <table id ="tableprojets">
+                            <thead>
+                                <tr>
+                                    <th>Description brève du projet</th>
+                                    <th>Apports de ce projet</th>
+                                    <th>Informations complémentaires</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Création d'un jeu d'échec</td>
+                                    <td>
+                                        <ul>
+                                            <li>Approfondissement des connaissances du langage JAVA</li>
+                                            <li>Initiation à la bibliothèque JavaFX</li>
+                                            <li>Utilisation de design patterns</li>                                            
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        Ce qui m'a motivé dans ce projet a été la création d'un jeu relativement simple
+                                        en java, afin d'apprendre à utiliser JavaFX et de reprendre notamment les concepts de thread.
+                                        J'ai également pu utiliser de nouvelles connaissances avec les design patterns, notamment <span>le pattern command</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Création d'un petit jeu mêlant jeu de cartes et tactical-rpg</td>
+                                    <td>
+                                        <ul>
+                                            <li>Approfondissement des connaissances sur le langage C++</li>
+                                            <li>Principale bibliothèque SFML 2.X</li>
+                                            <li>Initiation aux threads</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        Lors de ce projet je voulais créer un jeu en m'inspirant de Hearthstone et de Dofus, en cherchant à mixer les jeux de cartes à jouer et
+                                        de stratégie.<br>
+                                        J'ai pu approfondir quelques notions et notamment débuter mon apprentissage de la <span>programmation multi-threads</span>.                                    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Création d'une TODO list en ligne</td>
+                                    <td>
+                                        <ul>
+                                            <li>Initiation au Javascript (Ajax)</li>
+                                            <li>Approfondissement du PHP</li>
+                                            <li>Approfondissement du HTML</li>
+                                            <li>Approfondissement du CSS</li>
+                                            <li>Approfondissement du SQL (SGBDR = mysql)</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Dans ce projet je voulais créer un système de gestion mutualisé de TODO list basée sur des arborescences, 
+                                            dans lequel chaque personne pouvait recevoir un code unique pour accéder à une branche du projet dans le cas où elle avait été
+                                            partagée par le créateur de la liste.
+                                        </p>
+                                        <p>
+                                            J'étais intéressé par l'approfondissement de mes connaisssances web lors de ce projet. Bien que non publié, j'ai pu aller au bout de ce projet.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Création d'une application mobile de suivi nutritionnel</td>
+                                    <td>
+                                        <ul>
+                                            <li>Approfondissement du langage Java</li>
+                                            <li>Première expérience avec Android Studio</li>
+                                            <li>Première utilisation d'API externe (Open food facts)</li>
+                                            <li>Utilisation de Merise</li>
+                                            <li>Approfondissement du langage SQL (SGBDR= mysql)</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Dans ce projet j'ai voulu manipuler android, en scannant des codes barres, puis grâce à ces derniers le programme interrogeait
+                                            une API externe, afin d'y extraire les valeurs nutritionnelles et permettre de comptabiliser le total de ces dernières de manière journalière.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>                            
+                        </table>
+                    </p>
+                </section>
+                <section id="centresinteret">
+                    <h1>
+                        Centres d'intérêt
+                    </h1>
+                    <p>
+                        <span>Je développe mes compétences en mathématiques</span>
+                        pour diversifier et approfondir ma logique ainsi que mon raisonnement, en vue de <span>poursuivre mes études jusqu'au niveau ingénieur.</span>
+                        <br><span>Sportif,</span> je pratique la musculation et la natation ce qui m'apporte de la confiance en moi, une exigence personnelle saine
+                        et des moments de détente.
+                        <br>Je m'intéresse à la nutrition pour me garantir une bonne hygiène de vie.
+                    </p>
+                </section>
+                
+            </div>
+        </article>
     </main>
-    <footer>
-        <a href="mailto:rodolphe.bounatirou@gmail.com"><img src="src/images/mail.png" class="icon"
-                alt="icone de mail" /></a>
-        <a href="https://www.linkedin.com/in/rbounatirou"><img src="src/images/linkedin.png"
-                class="icon" alt="icone linkedin" /></a>
-        <a href="tel:0658026794"><img src="src/images/tel.png" class="icon" alt="icone tel" /></a>
-        <a href="src/CV_Rodolphe_Bounatirou.pdf" download><img src="src/images/pdf.png" class="icon" alt="icone pdf" /></a>
+    <footer class="nonprintable">                
+        <a href="https://www.linkedin.com/in/rbounatirou">
+        <div class="lien">                    
+            <figure class="largeicon linkedin">    
+            </figure>                
+        </div>
+        </a>
+        <a href="/src/CV.pdf">
+            <div class="lien">                    
+                <figure class="largeicon pdf">    
+                </figure>                
+            </div>
+        </a>
     </footer>
 </body>
-
 </html>
