@@ -6,6 +6,7 @@
     --tertiary: #166088;
     --tertiary-alpha: rgba(22, 96, 136, 0.4);
     --light: #ffffff;
+    
 }
 
 html{
@@ -48,7 +49,9 @@ header{
     flex-basis: 20vh;
 }
 
-
+#headergrid > section{
+    margin: 0.7rem;
+}
 
 
 
@@ -286,7 +289,7 @@ ul > li{
 
 /* TABLEAU PROJETS */
 
-#tableprojets {
+/*#tableprojets {
     border-collapse: collapse;
 }
 
@@ -314,8 +317,61 @@ ul > li{
 
 #tableprojets > tbody > tr > td > ul > li{
     list-style: circle;
+}*/
+#projectlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
+#projectlist > section{
+    margin: 0;
+}
+
+.projectpresentation{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "A A" "B C";
+    
+
+}
+
+
+.projectpresentation > .projecttitle{
+    grid-area: A;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--tertiary);
+}
+
+.projectpresentation > .projecttechno{
+    grid-area: B;
+    padding: 1rem;
+    background-color: var(--secondary);
+    text-shadow: none;
+    color: black;
+}
+
+.projectpresentation > .projecttechno > h1{
+    font-size: 1.6rem;
+}
+
+.projectpresentation > .projecttechno > ul > li{
+    list-style: circle ;
+}
+
+.projectpresentation > .projectother{
+    grid-area: C;
+    padding: 1rem;
+    background-color: var(--tertiary-alpha);
+}
+
+.projectpresentation > *{
+    margin: 0;
+}
 /* --- */
 
 footer{
@@ -469,6 +525,15 @@ span{
         text-align: center;
     }
 
+    #headergrid h1{
+        font-size: 3.2rem;
+    }
+    
+    #headergrid h2{
+        font-size: 2.4rem;
+    }
+    
+
 
     #infos{
         margin-left: 5rem;
@@ -505,7 +570,7 @@ span{
     }
 
     #articleprincipal{
-        padding-right: 30%;
+        padding-right: 15%;
     }
 
     #infos > section > h1{
