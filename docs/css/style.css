@@ -3,7 +3,7 @@
     --primary-alpha: rgba(74, 111, 165, 0.6); 
     --secondary: #C0D6DF;
     --secondary-alpha: rgba(192, 214, 223,0.8);
-    --tertiary: #166088;
+    --tertiary: #7966c4;
     --tertiary-alpha: rgba(22, 96, 136, 0.4);
     --light: #ffffff;
     
@@ -44,7 +44,7 @@ header{
     display: flex;
     flex-direction: row;
     margin: 0;
-    background-color: var(--tertiary);
+    background-color: var(--primary);
     color: var(--light);
     flex-basis: 20vh;
 }
