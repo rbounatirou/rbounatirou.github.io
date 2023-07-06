@@ -3,7 +3,7 @@
     --primary-alpha: rgba(74, 111, 165, 0.6); 
     --secondary: #C0D6DF;
     --secondary-alpha: rgba(192, 214, 223,0.8);
-    --tertiary: #6972c7;
+    --tertiary: #515dca;
     --tertiary-alpha: rgba(22, 96, 136, 0.4);
     --light: #ffffff;
     
@@ -77,6 +77,8 @@ footer{
     color: var(--light);
     justify-content: flex-end;
     flex-basis: 15vh;
+
+
 }
 
 #photo {
@@ -378,7 +380,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 3rem;
+    gap: 3rem;
+    padding: 1.5rem;
     
 }
 
@@ -432,6 +435,11 @@ span{
 
 #competencesgrid > #competencesframework{
     grid-area: D;
+}
+
+#navigation > ul > li > a{
+    text-decoration: none;
+    color:white;
 }
 
 @media screen and (min-width: 720px){
@@ -518,6 +526,8 @@ span{
     #navigation > ul > li {
         font-size: 1.6rem;
     }
+
+
 }
 
 @media screen and (min-width:1024px) {
