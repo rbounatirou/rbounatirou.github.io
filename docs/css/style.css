@@ -400,6 +400,30 @@ span{
     font-size: 1.4rem;
 }
 
+#headergrid{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "B C" "D D" "E E";    
+
+}
+
+#headergrid  > h1{
+    grid-area: B;
+}
+
+#headergrid > h2{
+    grid-area: D;
+}
+
+#headergrid > #blocliens{
+    grid-area: E;
+}
+
+#headergrid  > #age{
+    grid-area: C;
+}
+
 @keyframes ongletanim{
     from {
         background-color: transparent;
@@ -488,13 +512,7 @@ span{
     }
 
     
-    #headergrid{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "B C" "D D" "E E";    
     
-    }
 
     #photo {
         min-width: 15rem;
@@ -507,21 +525,7 @@ span{
         border: 0.5rem solid var(--secondary);
     }
 
-    #headergrid  > h1{
-        grid-area: B;
-    }
     
-    #headergrid > h2{
-        grid-area: D;
-    }
-    
-    #headergrid > #blocliens{
-        grid-area: E;
-    }
-    
-    #headergrid  > #age{
-        grid-area: C;
-    }
 
     #navigation > ul > li {
         font-size: 1.6rem;
