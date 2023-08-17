@@ -59,7 +59,7 @@ header{
     font-size: 1.8rem;
 }
 
-#headergrid h2{
+#titreSecondaire{
     font-size: 1.4rem;
 }
 
@@ -400,6 +400,9 @@ span{
     font-size: 1.4rem;
 }
 
+#titreSecondaire > span{
+    font-size: 1.1rem;
+}
 #headergrid{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -412,7 +415,7 @@ span{
     grid-area: B;
 }
 
-#headergrid > h2{
+#headergrid > #titreSecondaire{
     grid-area: D;
 }
 
@@ -475,8 +478,12 @@ span{
         font-size: 2.6rem;
     }
     
-    #headergrid h2{
+    #titreSecondaire{
         font-size: 1.7rem;
+    }
+
+    #titreSecondaire > span{
+        font-size: 1.4rem;
     }
     
 
@@ -543,10 +550,13 @@ span{
         font-size: 3.2rem;
     }
     
-    #headergrid h2{
+    #titreSecondaire{
         font-size: 2.4rem;
     }
     
+    #titreSecondaire > span{
+        font-size: 1.8rem;
+    }
 
 
     #infos{
